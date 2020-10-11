@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "extensions_Microsoft_Insights_VMDiagnosticsSettings_xmlCfg": {
-            "type": "SecureString"
+            "type": "accountid": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',parameters('existingdiagnosticsStorageResourceGroup'), '/providers/','Microsoft.Storage/storageAccounts/', parameters('existingdiagnosticsStorageAccountName'))]"
         },
         "extensions_Microsoft_Insights_VMDiagnosticsSettings_storageAccountName": {
             "type": "SecureString"
